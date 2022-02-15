@@ -7,7 +7,7 @@ import mnDistricts from './GeoJSON.geojson'
 
 export default function MapComponent() {
 
-	mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuaWxhODQ2IiwiYSI6ImNrem1vZjlpaTJxdzUybm8wd3VjNDlpbmMifQ.1HmKdO8hLtsQLxaa0q6y8w';
+	mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_KEY;
 
 	const mapContainer = useRef(null);
 	// const map = useRef(null);
